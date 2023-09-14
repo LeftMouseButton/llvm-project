@@ -1,3 +1,13 @@
+```
+git clone --depth=1 https://github.com/LeftMouseButton/llvm-project.git
+cd llvm-project
+mkdir build
+cd build
+cmake -DLLVM_ENABLE_PROJECTS="clang;clang-tools-extra" -DCMAKE_BUILD_TYPE=Release -G Ninja ../llvm
+cmake --build . --target clangd
+```
+
+-----
 # The LLVM Compiler Infrastructure
 
 Welcome to the LLVM project!
