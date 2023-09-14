@@ -614,7 +614,7 @@ private:
       if (Snippet->front() == '<')
         return EmptyArgs ? "<$1>()$0" : "<$1>($0)";
       if (Snippet->front() == '(')
-        return EmptyArgs ? "()" : "($0)";
+        return EmptyArgs ? "(" : "($0";
       return *Snippet; // Not an arg snippet?
     }
     // 'CompletionItemKind::Interface' matches template type aliases.
